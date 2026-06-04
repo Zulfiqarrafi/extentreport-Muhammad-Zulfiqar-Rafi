@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-04T19:30:49 ICT" name="SauceDemo Test Suite" finished-at="2026-06-04T19:31:13 ICT" duration-ms="24559">
+    <groups>
+    </groups>
+    <test started-at="2026-06-04T19:30:49 ICT" name="Functional Tests" finished-at="2026-06-04T19:31:13 ICT" duration-ms="24559">
+      <class name="extentreport.peserta.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:extentreport.peserta.tests.LoginTest@4681c175]" started-at="2026-06-04T19:30:49 ICT" name="setUp" finished-at="2026-06-04T19:30:52 ICT" duration-ms="3010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNegativeLogin()[pri:0, instance:extentreport.peserta.tests.LoginTest@4681c175]" started-at="2026-06-04T19:30:52 ICT" name="testNegativeLogin" description="Verify login is rejected when using invalid credentials" finished-at="2026-06-04T19:30:52 ICT" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:extentreport.peserta.tests.LoginTest@4681c175]" started-at="2026-06-04T19:30:52 ICT" name="tearDown" finished-at="2026-06-04T19:30:53 ICT" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:extentreport.peserta.tests.LoginTest@4681c175]" started-at="2026-06-04T19:30:53 ICT" name="setUp" finished-at="2026-06-04T19:30:54 ICT" duration-ms="1772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPositiveLogin()[pri:0, instance:extentreport.peserta.tests.LoginTest@4681c175]" started-at="2026-06-04T19:30:54 ICT" name="testPositiveLogin" description="Verify successful login using valid credentials" finished-at="2026-06-04T19:30:55 ICT" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:extentreport.peserta.tests.LoginTest@4681c175]" started-at="2026-06-04T19:30:55 ICT" name="tearDown" finished-at="2026-06-04T19:30:55 ICT" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- extentreport.peserta.tests.LoginTest -->
+      <class name="extentreport.peserta.tests.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:extentreport.peserta.tests.CheckoutTest@52f27fbd]" started-at="2026-06-04T19:31:00 ICT" name="setUp" finished-at="2026-06-04T19:31:01 ICT" duration-ms="1618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulCheckout()[pri:0, instance:extentreport.peserta.tests.CheckoutTest@52f27fbd]" started-at="2026-06-04T19:31:01 ICT" name="testSuccessfulCheckout" description="Verify successful checkout flow after adding two products to the cart" finished-at="2026-06-04T19:31:13 ICT" duration-ms="12071" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to contain "checkout-step-two.html". Current url: "https://www.saucedemo.com/checkout-step-one.html" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55764}, goog:processID: 21932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55764/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d850270b17b83dab0f39a9fb1243444b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "checkout-step-two.html". Current url: "https://www.saucedemo.com/checkout-step-one.html" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55764}, goog:processID: 21932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55764/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d850270b17b83dab0f39a9fb1243444b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at extentreport.peserta.pages.CheckoutPage.clickContinue(CheckoutPage.java:74)
+at extentreport.peserta.tests.CheckoutTest.testSuccessfulCheckout(CheckoutTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:extentreport.peserta.tests.CheckoutTest@52f27fbd]" started-at="2026-06-04T19:31:13 ICT" name="tearDown" finished-at="2026-06-04T19:31:13 ICT" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- extentreport.peserta.tests.CheckoutTest -->
+      <class name="extentreport.peserta.tests.SortTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:extentreport.peserta.tests.SortTest@45d84a20]" started-at="2026-06-04T19:30:55 ICT" name="setUp" finished-at="2026-06-04T19:30:57 ICT" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSortNameZtoA()[pri:0, instance:extentreport.peserta.tests.SortTest@45d84a20]" started-at="2026-06-04T19:30:57 ICT" name="testSortNameZtoA" description="Verify product list can be sorted by Name (Z to A)" finished-at="2026-06-04T19:30:57 ICT" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortNameZtoA -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:extentreport.peserta.tests.SortTest@45d84a20]" started-at="2026-06-04T19:30:57 ICT" name="tearDown" finished-at="2026-06-04T19:30:57 ICT" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:extentreport.peserta.tests.SortTest@45d84a20]" started-at="2026-06-04T19:30:57 ICT" name="setUp" finished-at="2026-06-04T19:30:59 ICT" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSortPriceLowToHigh()[pri:0, instance:extentreport.peserta.tests.SortTest@45d84a20]" started-at="2026-06-04T19:30:59 ICT" name="testSortPriceLowToHigh" description="Verify product list can be sorted by Price (Low to High)" finished-at="2026-06-04T19:30:59 ICT" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortPriceLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:extentreport.peserta.tests.SortTest@45d84a20]" started-at="2026-06-04T19:30:59 ICT" name="tearDown" finished-at="2026-06-04T19:31:00 ICT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- extentreport.peserta.tests.SortTest -->
+    </test> <!-- Functional Tests -->
+  </suite> <!-- SauceDemo Test Suite -->
+</testng-results>

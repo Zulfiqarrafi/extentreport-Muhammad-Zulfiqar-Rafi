@@ -1,0 +1,22 @@
+TC ID,Scenario Name,Step No,Test Step,Test Data,Expected Result,Actual Result,Status
+TC_LGN_001,Positive Login,1,Buka halaman utama Swag Labs,URL: https://www.saucedemo.com/,Halaman login Swag Labs terbuka dan field input terlihat,Halaman login berhasil dimuat,PASS
+TC_LGN_001,Positive Login,2,Masukkan username dan password yang valid,Username: standard_user \nPassword: secret_sauce,Input terisi dengan kredensial yang dimasukkan,Kredensial berhasil diinput,PASS
+TC_LGN_001,Positive Login,3,Klik tombol login,,Sistem berhasil melakukan autentikasi dan mengarahkan ke halaman inventory,Berhasil masuk ke halaman utama / inventory dengan URL inventory.html,PASS
+TC_LGN_001,Positive Login,4,Verifikasi tampilan header halaman inventory,,Muncul teks header "Products" di bagian kiri atas halaman utama,Teks header "Products" muncul dengan benar,PASS
+TC_LGN_002,Negative Login,1,Buka halaman utama Swag Labs,URL: https://www.saucedemo.com/,Halaman login Swag Labs terbuka dan field input terlihat,Halaman login berhasil dimuat,PASS
+TC_LGN_002,Negative Login,2,Masukkan username valid dan password salah,Username: standard_user \nPassword: wrong_password,Input terisi dengan kredensial yang dimasukkan,Kredensial berhasil diinput,PASS
+TC_LGN_002,Negative Login,3,Klik tombol login,,Sistem menolak login dan menampilkan pesan kesalahan,Login ditolak dengan menampilkan pesan error,PASS
+TC_LGN_002,Negative Login,4,Verifikasi teks pesan kesalahan,,Pesan kesalahan berisi: "Epic sadface: Username and password do not match any user in this service",Pesan kesalahan sesuai dengan yang diharapkan,PASS
+TC_SRT_001,Sort Name Z to A,1,Login ke sistem menggunakan kredensial valid,Username: standard_user \nPassword: secret_sauce,Sistem mengarahkan ke halaman inventory,Berhasil login dan diarahkan ke halaman inventory,PASS
+TC_SRT_001,Sort Name Z to A,2,Pilih opsi pengurutan "Name (Z to A)" pada dropdown sort,Dropdown value: za,Daftar produk berubah urutannya secara instan,Dropdown berubah dan urutan produk diperbarui,PASS
+TC_SRT_001,Sort Name Z to A,3,Verifikasi daftar produk berurutan abjad dari Z ke A,,Nama produk pertama abjadnya lebih tinggi/sama dengan produk kedua dan seterusnya,Nama produk terverifikasi urut menurun (Z ke A),PASS
+TC_SRT_002,Sort Price Low to High,1,Login ke sistem menggunakan kredensial valid,Username: standard_user \nPassword: secret_sauce,Sistem mengarahkan ke halaman inventory,Berhasil login dan diarahkan ke halaman inventory,PASS
+TC_SRT_002,Sort Price Low to High,2,Pilih opsi pengurutan "Price (Low to High)" pada dropdown sort,Dropdown value: lohi,Daftar produk berubah urutannya secara instan berdasarkan harga terendah,Dropdown berubah dan urutan produk diperbarui,PASS
+TC_SRT_002,Sort Price Low to High,3,Verifikasi harga produk berurutan dari murah ke mahal,,Harga produk pertama lebih murah/sama dengan produk kedua dan seterusnya,Harga produk terverifikasi urut menaik (Low to High),PASS
+TC_CHK_001,E2E Checkout Process,1,Login ke sistem menggunakan kredensial valid,Username: standard_user \nPassword: secret_sauce,Sistem mengarahkan ke halaman inventory,Berhasil login dan diarahkan ke halaman inventory,PASS
+TC_CHK_001,E2E Checkout Process,2,Pilih minimal 2 produk acak dan tambahkan ke keranjang,,Tombol produk berubah dari "Add to Cart" menjadi "Remove" dan keranjang bertambah 2,Produk berhasil ditambahkan dan cart badge bernilai 2,PASS
+TC_CHK_001,E2E Checkout Process,3,Klik ikon keranjang untuk masuk ke halaman Cart,,Diperlihatkan daftar produk yang telah dipilih sebelumnya,Masuk ke halaman keranjang belanja (cart.html),PASS
+TC_CHK_001,E2E Checkout Process,4,Klik tombol "Checkout",,Diarahkan ke halaman pengisian informasi pengiriman (checkout-step-one.html),Masuk ke halaman informasi pengiriman,PASS
+TC_CHK_001,E2E Checkout Process,5,Isi data informasi pengiriman (First Name Last Name Postal Code) dan klik Continue,First Name: TestFirst \nLast Name: TestLast \nPostal Code: 12345,Diarahkan ke halaman konfirmasi pemesanan (checkout-step-two.html),Informasi terisi dan diarahkan ke halaman Overview,PASS
+TC_CHK_001,E2E Checkout Process,6,Klik tombol "Finish" pada halaman Checkout Overview,,Diarahkan ke halaman sukses (checkout-complete.html),Halaman sukses dimuat dengan benar,PASS
+TC_CHK_001,E2E Checkout Process,7,Verifikasi munculnya pesan sukses pembelian,,Muncul teks "Thank you for your order!" pada layar,Pesan sukses "Thank you for your order!" terverifikasi,PASS
